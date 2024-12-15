@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In - Our Library</title>
+    <link rel="stylesheet" href="signin.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="signin.html" class="logo">Our Library</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="signin.html" class="active">Sign In</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Sign In Section -->
+    <section class="signin-section">
+        <div class="container">
+            <h2> Our Library Login</h2>
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Enter your username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password" required>
+            </div>
+            <button onclick="login()">Login</button>
+        
+            <div class="link">
+                <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+            </div>
+        </div>
+        <footer>
+            <div class="container">
+                <p>&copy; 2024 Library System of Botanical Training. All Rights Reserved.</p>
+                <div class="social-links">
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Instagram</a>
+                </div>
+            </div>
+        </footer>
+        
+        <script>
+            function login() {
+                const username = document.getElementById('username').value;
+                const password = document.getElementById('password').value;
+        
+                const storedUsername = localStorage.getItem('username');
+                const storedPassword = localStorage.getItem('password');
+        
+                if (username === storedUsername && password === storedPassword) {
+                    // Redirect to homepage.html after successful login
+                    window.location.href = 'index.html';
+                } else {
+                    alert('Invalid credentials. Please try again.');
+                }
+            }
+        </script>
+        
+        </body>
+        </html>

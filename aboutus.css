@@ -1,0 +1,146 @@
+/* General Styles for About Us Page */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f8f8f8;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #2b3a3a;
+    padding: 1rem 0;
+    color: white;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin: 0 1rem;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.about-hero {
+    background-image: url('https://i0.wp.com/cms.babbel.news/wp-content/uploads/2022/01/Most_Beautiful_Libraries.png'); /* Add your About Us hero image */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 6rem 0;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+}
+
+/* Introduction Section */
+.introduction {
+    background-color: #f4f4f4;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.introduction h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.introduction p {
+    font-size: 1.2rem;
+    width: 60%;
+    margin: 0 auto;
+}
+
+/* Our Mission Section */
+.mission {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.mission h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.mission p {
+    font-size: 1.2rem;
+    width: 70%;
+    margin: 0 auto;
+}
+
+/* Team Section */
+.team {
+    background-color: #f4f4f4;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.team h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.team-member {
+    display: inline-block;
+    width: 30%;
+    margin: 1rem;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.team-member img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.team-member h3 {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.team-member p {
+    font-size: 1.2rem;
+    color: #777;
+}
+
+/* Footer */
+footer {
+    background-color: #2b3a3a;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+footer .social-links {
+    margin-top: 1rem;
+}
+
+footer .social-links a {
+    color: white;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+
+footer .social-links a:hover {
+    text-decoration: underline;
+}

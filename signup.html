@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Library System</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Library System</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="signin.html">SignIn</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Sign Up Section -->
+    <h2>Sign Up</h2>
+    <div class="form-group">
+        <label for="newUsername">Username</label>
+        <input type="text" id="newUsername" placeholder="Enter your username" required>
+    </div>
+    <div class="form-group">
+        <label for="newPassword">Password</label>
+        <input type="password" id="newPassword" placeholder="Enter your password" required>
+    </div>
+    <button onclick="signUp()">Sign Up</button>
+
+    <div class="link">
+        <p>Already have an account? <a href="signin.html">Login</a></p>
+    </div>
+</div>
+<footer>
+    <div class="container">
+        <p>&copy; 2024 Library System of Botanical Training. All Rights Reserved.</p>
+        <div class="social-links">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+    </div>
+</footer>
+
+
+<script>
+    function signUp() {
+        const username = document.getElementById('newUsername').value;
+        const password = document.getElementById('newPassword').value;
+
+        if (username && password) {
+            localStorage.setItem('username', username);
+            localStorage.setItem('password', password);
+
+            alert('Account created successfully!');
+            window.location.href = 'signin.html';
+        } else {
+            alert('Please fill in both fields');
+        }
+    }
+</script>
+
+</body>
+</html>
